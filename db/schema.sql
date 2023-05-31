@@ -19,3 +19,5 @@ CREATE TABLE wishlisted(
     user_id INTEGER,
     movie_id INTEGER
 );
+
+-- Hello Team
