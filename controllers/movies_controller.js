@@ -13,10 +13,10 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     const title = req.body.title
     const description = req.body.description
-    const imgLink = req.body.imageLink
+    const imageLink = req.body.imageLink
 
     Movies
-        .create(title, description, imgLink)
+        .create(title, description, imageLink)
         .then(movies => res.json(movies))
 })
 
