@@ -17,3 +17,32 @@ function renderLogin() {
         </section>
     `
 }
+
+function logIn(event) {
+    event.preventDefault()
+    const form = event.target
+
+const data = Object.fromEntries(new FormData(form))
+
+fetch('/api/sessios', {
+    method: 'POST',
+    headers: { 'Content-Type' : 'application/json' },
+    body: JSON.stringify(data)
+})
+    .then(res => res.json())
+    .then(res =>  {
+        if(res.error) {
+            renderLogin()
+            renderError(res.error)
+        } else {
+            state.loggedInUser = res
+            renderMovieList()
+        }
+    })
+}
+
+function renderError(errorMessage) {
+    document.querySelector('#page').innerHTML =  
+    `<h2 style='color: red;'>${errorMessage}</h2>` + 
+    document.querySelector('#page').innerHTML
+}
