@@ -32,6 +32,15 @@ const User = {
         return db
         .query(sql, [name, email, passwordDigest])
         .then(dbRes => dbRes.rows[0].email)
+    },
+
+    update: (name, email, passwordDigest, currentUser) => {
+        const sql = `
+            UPDATE users SET name = $1, email = $2, password_digest = $3 WHERE email = %4
+        `
+        return db
+        .query(sql, [name, email, passwordDigest, currentUser])
+        .then(dbRes => dbRes.rows[0].email)
     }
 }
 

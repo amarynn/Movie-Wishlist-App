@@ -25,7 +25,7 @@ function createMovie(event) {
     event.preventDefault()
     const form = event.target
 
-    const data = Object.fromEntries(new FormData(form)) // Converts form data into object
+    const data = Object.fromEntries(new FormData(form))
 
     fetch('/api/movies', {
         method: 'POST',
