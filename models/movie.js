@@ -1,6 +1,6 @@
 const db = require('../db/db.js')
 
-const Movie = {
+const Movies = {
     findAll: () => {
         const sql = `SELECT * FROM movies`
 
@@ -25,3 +25,5 @@ const Movie = {
         return db.query(sql, [id])
     }
 }
+
+module.exports = Movies
