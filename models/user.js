@@ -30,7 +30,7 @@ const User = {
             RETURNING *
         `
         return db
-        .query(sql, [name, email,   passwordDigest])
+        .query(sql, [name, email, passwordDigest])
         .then(dbRes => dbRes.rows[0].email)
     }
 }
