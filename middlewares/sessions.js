@@ -5,5 +5,5 @@ module.exports = session({
   secret: process.env.EXPRESS_SESSION_SECRET_KEY,
   resave: false,
   saveUninitialized: false,
-  cookie: { maxAge: 1000 * 60 * 60 * 24 }
+  cookie: { maxAge: 1000 * 60 * 60 * 6 }
 })
