@@ -4,7 +4,8 @@ CREATE DATABASE movie_wishlist_app;
 CREATE TABLE movies(
     id SERIAL PRIMARY KEY,
     title TEXT,
-    description TEXT
+    description TEXT,
+    img_link TEXT
 );
 
 CREATE TABLE users(
