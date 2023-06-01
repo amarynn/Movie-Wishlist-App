@@ -12,7 +12,6 @@ router.post('/', (req, res) => {
         .then(user => {
             const isValidPassword = bcrypt.compareSync(password, user.password_digest)
             if (user && isValidPassword) {
-
                 req.session.userId = user[id]
                 res.json({ email: user.email })
             }
