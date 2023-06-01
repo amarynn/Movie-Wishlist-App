@@ -34,7 +34,7 @@ function createMovie(event) {
     })
         .then(res => res.json())
         .then(movie => {
-            state.movieList.push(movie)
+            state.moviesList.push(movie)
             renderMovieList()
         })
 }
