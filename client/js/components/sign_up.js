@@ -27,7 +27,7 @@ function renderSignUp() {
 function signUp(event) {
     event.preventDefault()
     const form = event.target
-}
+
 
 const data =  Object.fromEntries(new FormData(form))
 
@@ -36,4 +36,8 @@ fetch('/api/users', {
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(data)
 })
-    
+    .then(res => res.json())
+    .then(email => state.loggedInUser = email)
+    .then(() => renderMovieList())
+
+}
