@@ -18,3 +18,17 @@ function renderMovies() {
         </section>
     `).join('')
 }
+
+function deleteMovie(event) {
+    const deleteButton = event.target
+    const movieDOM = deleteButton.closest('.movie')
+    const movieId = movieDOM.dataset.id
+
+    fetch(`/api/movies/${movieId}`, {
+        method: 'DELETE'
+    })
+        .then(() => {
+            state.moviesList = state.moviesList.filter(movie => movie.id !== movieId)
+            renderMovieList()
+        })
+}
