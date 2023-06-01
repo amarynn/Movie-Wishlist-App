@@ -28,7 +28,7 @@ function deleteMovie(event) {
         method: 'DELETE'
     })
         .then(() => {
-            state.moviesList = state.moviesList.filter(movie => movie.id !== movieId)
+            state.moviesList = state.moviesList.filter(movie => movie.id != movieId)
             renderMovieList()
         })
 }
