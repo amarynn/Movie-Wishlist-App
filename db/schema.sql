@@ -25,5 +25,5 @@ CREATE TABLE wishlisted(
 
 INSERT INTO movies(title, description, img_link)
 VALUES 
-    ('Spider Man', 'Spiderman', '123'),
-    ('Man', 'Sp-=fsdfman', '123');
+    ('Spider Man', 'Spiderman', 'https://m.media-amazon.com/images/M/MV5BZDEyN2NhMjgtMjdhNi00MmNlLWE5YTgtZGE4MzNjMTRlMGEwXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_FMjpg_UX1000_.jpg'),
+    ('Man', 'Sp-=fsdfman', 'https://m.media-amazon.com/images/M/MV5BZDEyN2NhMjgtMjdhNi00MmNlLWE5YTgtZGE4MzNjMTRlMGEwXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_FMjpg_UX1000_.jpg');
