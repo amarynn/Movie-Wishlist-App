@@ -18,5 +18,10 @@ const Movie = {
         return db
             .query(sql, [title, description, imgLink])
             .then(dbRes => dbRes.rows[0])
+    },
+    delete: (id) => {
+        const sql = `DELETE FROM movies WHERE id = $1`
+
+        return db.query(sql, [id])
     }
 }
