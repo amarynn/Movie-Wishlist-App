@@ -19,3 +19,15 @@ router.post('/', (req, res) => {
         .create(title, description, imgLink)
         .then(movies => res.json(movies))
 })
+
+router.delete('/:id', (req, res) => {
+    const movieId = req.params.id
+
+    Movies
+        .delete(movieId)
+        .then(movies => res.json(movies))
+})
+
+// ability to edit movies needs more discussion
+
+module.exports = router
