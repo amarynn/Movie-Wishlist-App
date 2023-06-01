@@ -22,3 +22,8 @@ CREATE TABLE wishlisted(
 );
 
 -- Hello Team
+
+INSERT INTO movies(title, description, img_link)
+VALUES 
+    ('Spider Man', 'Spiderman', '123'),
+    ('Man', 'Sp-=fsdfman', '123');

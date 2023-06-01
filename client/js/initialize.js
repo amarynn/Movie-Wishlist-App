@@ -5,7 +5,7 @@ let state = {
 fetch('/api/movies')
     .then(res => res.json())
     .then(movies => {
-        state.movies = movies
+        state.moviesList = movies
         renderMovieList()
     })
 
