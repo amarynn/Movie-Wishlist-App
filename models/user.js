@@ -15,7 +15,7 @@ const User = {
     findByEmail:  email => {
         const sql = `
             SELECT * FROM users
-            WHERE email =  1$
+            WHERE email =  $1
         `
 
         return db
