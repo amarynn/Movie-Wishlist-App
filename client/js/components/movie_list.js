@@ -14,7 +14,7 @@ function renderMovies() {
                 <span class="material-symbols-outlined delete" onClick="deleteMovie(event)">delete</span>
             </header>
             <p>${movie.description}</p>
-            <img src="${movie.imageLink}">
+            <img src="${movie.img_link}">
         </section>
     `).join('')
 }
