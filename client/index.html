@@ -14,9 +14,11 @@
     <script defer src="./js/components/login.js"></script>
     <script defer src="./js/components/movie_list.js"></script>
     <script defer src="./js/components/add_movie.js"></script>
+    <script defer src="./js/components/edit_movie.js"></script>
     <script defer src="./js/components/edit_account.js"></script>
     <script defer src="./js/components/search_movie.js"></script>
-    <script defer src="./js/components/filter_movies.js"></script>
+		<script defer src="./js/components/filter_movies.js"></script>
+		<script defer src="./js/components/wishlist.js"></script>
 </head>
 <body>
     <h1>Movie WishList</h1>
@@ -35,6 +37,7 @@
             <li class="user-info" id="material-symbols-outlined sign-up" onClick="renderSignUp()">Sign Up</li>
             <li class="user-info"  id="material-symbols-outlined login" onClick="renderLogin()">Login</li>
             <li class="user-info"  id="material-symbols-outlined login" onClick="renderAddMovie()">Add Movie</li>
+            <li class="user-info"  id="material-symbols-outlined login" onClick="renderUserWishlist()">My Wishlist</li>
             <li class="user-info"  id="material-symbols-outlined login">
                 <form action="" onSubmit="searchMovie(event)">
                     <input class="apiInput" placeholder="Search for a movie...">
