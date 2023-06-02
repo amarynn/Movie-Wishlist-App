@@ -1,21 +1,8 @@
-function renderSearchMovie() {
-    document.querySelector('#page').innerHTML = `
-            <form action="" onSubmit="searchMovie(event)">
-                <h2>Add Movie</h2>
-                <fieldset>
-                    <label for="">Title:</label>
-                    <input type="text" name="title" class="apiInput">
-                </fieldset>
-                <button>Add Movie</button>
-            </form>
-        </section>
-    `
-}
 function searchMovie(event) {
     event.preventDefault()
-    const title = document.querySelector('.apiInput').value    
+    const apiTitle = document.querySelector('.apiInput').value    
     
-    fetch(`https://www.omdbapi.com/?apikey=28d95ef8&t=${title}`)
+    fetch(`https://www.omdbapi.com/?apikey=28d95ef8&t=${apiTitle}`)
         .then(res => res.json())
         .then(movie => {
             const title = movie.Title
