@@ -1,27 +1,34 @@
-.header-nav ul{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+.header-nav{
+    display: flex;
+    justify-content:left;
     text-decoration: none;
     list-style: none;
     border: 2px solid 394867;
     font-size: 15px;
-    font-family: fantasy;
     justify-content: center;
     margin-left: 0px;
     background-color: #9BA4B5;
     color:aliceblue;
     padding-left: 10px;
-    gap: 0px;
+    gap: 50px;
     padding-right: 0px;
-   
-    
+}
+
+.header-nav ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+.header-nav ul.navigation li{
+    min-width: 100px;
 }
 
 .bliss{
     font-family: cursive;
     font-size: 40px;
     padding: 0;
-    margin-left: 20px;
+    margin-right: 200px;
+    margin-left:  100px;
     box-shadow: 6px 6px 6px #394867;
 }
 
@@ -29,12 +36,17 @@
     padding-left: 30;
     margin: 0;
     box-shadow: 6px 6px 6px #394867;
+    margin-left:  90px;
 }
 
 .user-info{
     padding-top: 25px;
-    line-height: 1px;
+  
     gap:  0px;
+    text-size-adjust: 10px;
+    padding-right: 30px;
+    gap: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -63,3 +75,4 @@
 #material-symbols-outlined.login{
     box-shadow: 6px 6px 6px #394867;
 }
+
