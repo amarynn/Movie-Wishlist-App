@@ -12,6 +12,12 @@
     padding-left: 10px;
     gap: 50px;
     padding-right: 0px;
+    padding-bottom: 0px;
+    height: 100px;
+    
+}
+.user-info:hover{
+    cursor: pointer;
 }
 
 .header-nav ul{
@@ -27,31 +33,35 @@
 
 .user-info{
     padding-top: 25px;
-  
     gap:  0px;
     text-size-adjust: 10px;
-    padding-right: 30px;
+    padding-right: 40px;
     gap: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 0;
 }
 
 
 .logo{
-    font-size: 60px;
+    font-size: 15px;
     padding-left: 20px;
-    padding-top: 15px;
+    padding-top: 0px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: 2px solid orange;
     border-radius: 70%;
     border-width: 20px;
-    border-block-width: 20px; 
-    width: 60px;
+    width: 50px;
     box-shadow: 6px 6px 6px #394867;
-    font-size: 40px;
-    padding: 0;
-    margin-right: 200px;
-    margin-left:  100px;
+  
+    padding-bottom:10;
+    margin-right: 50px;
+    /* margin-right: 200px;
+    margin-left:  100px; */
     box-shadow: 6px 6px 6px #394867;
+    height: 80px;
+    text-align: center;
+    font-style: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
@@ -67,3 +77,6 @@
     box-shadow: 6px 6px 6px #394867;
 }
 
+#search{
+    padding-bottom: 100px;
+}

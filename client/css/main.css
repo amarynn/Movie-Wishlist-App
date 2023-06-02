@@ -4,6 +4,7 @@
 
 body {
     margin: 0 2rem;
+    
 }
 
 form {
@@ -25,4 +26,6 @@ form textarea {
 
 h1 {
    text-align: center;
+   background-color: orange;
+   margin-bottom: 0;
 }
