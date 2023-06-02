@@ -34,12 +34,20 @@ const User = {
         .then(dbRes => dbRes.rows[0].email)
     },
 
-    update: (name, email, passwordDigest, currentUser) => {
+    update: (name, email, passwordDigest, currentUserId) => {
         const sql = `
-            UPDATE users SET name = $1, email = $2, password_digest = $3 WHERE email = %4
+            UPDATE users SET name = $1, email = $2, password_digest = $3 WHERE id = $4 RETURNING *
         `
         return db
-        .query(sql, [name, email, passwordDigest, currentUser])
+        .query(sql, [name, email, passwordDigest, currentUserId])
+        .then(dbRes => dbRes.rows[0].email)
+    },
+    updateNoPass: (name, email, currentUserId) => {
+        const sql = `
+            UPDATE users SET name = $1, email = $2 WHERE id = $3 RETURNING *
+        `
+        return db
+        .query(sql, [name, email, currentUserId])
         .then(dbRes => dbRes.rows[0].email)
     }
 }
