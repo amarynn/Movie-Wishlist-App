@@ -36,6 +36,7 @@ function renderMovies() {
         <section class="movie" data-id="${movie.id}">
             <header>
                 <h2>${movie.title}</h2>
+                <span class="material-symbols-outlined  plus" onClick="addWishlist(event)">Wishlist</span>
                 <span class="material-symbols-outlined  delete" onClick="deleteMovie(event)">Delete</span>
                 <span class="material-symbols-outlined  edit" onClick="editMovie(event)">Edit</span>
 
@@ -59,7 +60,6 @@ function deleteMovie(event) {
             renderMovieList()
         })
 }
-
 function editMovie(event) {
     const editButton = event.target
     const movieDOM = editButton.closest('.movie')
@@ -67,5 +67,12 @@ function editMovie(event) {
     renderEditMovie()
 
 }
-
-
+function addWishlist(event) {
+    const wishlistButton = event.target
+    const movieDOM = wishlistButton.closest('.movie')
+    const movieId = movieDOM.dataset.id
+    fetch(`/api/wishlist/${movieId}`, {
+        method: 'POST'
+    })
+        .then(res => res.json())
+}
