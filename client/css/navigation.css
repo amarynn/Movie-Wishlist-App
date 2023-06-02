@@ -13,6 +13,8 @@
     padding-left: 10px;
     gap: 0px;
     padding-right: 0px;
+   
+    
 }
 
 .bliss{
@@ -20,15 +22,19 @@
     font-size: 40px;
     padding: 0;
     margin-left: 20px;
+    box-shadow: 6px 6px 6px #394867;
 }
 
 .sei{
-    padding-left: 20;
+    padding-left: 30;
     margin: 0;
+    box-shadow: 6px 6px 6px #394867;
 }
 
 .user-info{
     padding-top: 25px;
+    line-height: 1px;
+    gap:  0px;
 }
 
 
@@ -42,6 +48,18 @@
     border-width: 30px;
     border-block-width: 20px; 
     width: 60px;
+    box-shadow: 6px 6px 6px #394867;
 
 }
 
+.material-symbols-outlined.delete{
+    color: rgb(211, 96, 92)
+}
+
+#material-symbols-outlined.sign-up{
+    box-shadow: 6px 6px 6px #394867;
+}
+
+#material-symbols-outlined.login{
+    box-shadow: 6px 6px 6px #394867;
+}

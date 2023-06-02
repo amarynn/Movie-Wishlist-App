@@ -11,7 +11,7 @@ function renderMovies() {
         <section class="movie" data-id="${movie.id}">
             <header>
                 <h2>${movie.title}</h2>
-                <span class="material-symbols-outlined delete" onClick="deleteMovie(event)">delete</span>
+                <span class="material-symbols-outlined  delete" onClick="deleteMovie(event)">Delete</span>
             </header>
             <p>${movie.description}</p>
             <img src="${movie.img_link}">
