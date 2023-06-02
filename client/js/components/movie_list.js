@@ -8,22 +8,22 @@ function renderMovieList() {
     apiTitle.value = ""
 }
 
-function renderEditMovie(){
+function renderEditMovie(movie){
         document.querySelector('#page').innerHTML = `
             <section class="create-movie">
                 <form action="" onSubmit="createMovie(event)">
-                    <h2>Edit Movie</h2>
+                    <h2>Edit ${movie.title}</h2>
                     <fieldset>
                         <label for="">Title:</label>
-                        <input type="text" name="title">
+                        <input type="text" name="title" value="${movie.title}">
                     </fieldset>
                     <fieldset>
                         <label for="">Description:</label>
-                        <textarea name="description" id="" cols="30" rows="10"></textarea>
+                        <textarea name="description" id="" cols="30" rows="10">${movie.description}</textarea>
                     </fieldset>
                     <fieldset>
                         <label for="">Poster Link:</label>
-                        <input type="text" name="imageLink">
+                        <input type="text" name="imageLink" value="${movie.img_link}">
                     </fieldset>
                     <button>Edit Movie</button>
                 </form>
@@ -64,7 +64,8 @@ function editMovie(event) {
     const editButton = event.target
     const movieDOM = editButton.closest('.movie')
     const movieId = movieDOM.dataset.id
-    renderEditMovie()
+    const movie = state.moviesList.filter(movie => movie.id == movieId)[0]
+    renderEditMovie(movie)
 
 }
 function addWishlist(event) {
