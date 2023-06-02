@@ -32,3 +32,4 @@ function deleteMovie(event) {
             renderMovieList()
         })
 }
+
