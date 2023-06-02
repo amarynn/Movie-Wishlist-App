@@ -14,16 +14,16 @@ router.post("/", (req, res) => {
 
 router.post("/update", (req, res) => {
     const { name, email, password } = req.body
-    let currentUser = state.loggedInUser
+    let currentUserId = req.session.userId
     if (password === "") {
         User
-            .updateNoPass(name, email)
+            .updateNoPass(name, email, currentUserId)
             .then(email => res.json(email))
     } else {
         const passwordDigest = bcrypt.hashSync(password, bcrypt.genSaltSync(12), null)
 
         User
-            .update(name, email, passwordDigest, currentUser)
+            .update(name, email, passwordDigest, currentUserId)
             .then(email => res.json(email))
     }
     
