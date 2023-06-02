@@ -27,7 +27,11 @@
             <li class="user-info" id="material-symbols-outlined sign-up" onClick="renderSignUp()">Sign Up</li>
             <li class="user-info"  id="material-symbols-outlined login" onClick="renderLogin()">Login</li>
             <li class="user-info"  id="material-symbols-outlined login" onClick="renderAddMovie()">Add Movie</li>
-            <li class="user-info"  id="material-symbols-outlined login" onClick="renderSearchMovie()">Search Movie</li>
+            <li class="user-info"  id="material-symbols-outlined login">
+                <form action="" onSubmit="searchMovie(event)">
+                    <input class="apiInput" placeholder="Search for a movie...">
+                </form>
+            </li>
             <li class="user-info"  id="material-symbols-outlined login" onClick="renderEditAccount()">Edit Account</li>
         </ul>
     </nav>

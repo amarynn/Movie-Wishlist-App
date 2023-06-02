@@ -1,9 +1,11 @@
 function renderMovieList() {
+    const apiTitle = document.querySelector('.apiInput')
     document.querySelector('#page').innerHTML = `
         <section class="movie-list">
             ${renderMovies()}
         </section>
     `
+    apiTitle.value = ""
 }
 
 function renderMovies() {
