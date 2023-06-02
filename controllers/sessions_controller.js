@@ -10,10 +10,17 @@ router.post('/', (req, res) => {
     User
         .findByEmail(email)
         .then(user => {
-            const isValidPassword = bcrypt.compareSync(password, user.password_digest)
-            if (user && isValidPassword) {
-                req.session.userId = user.id
-                res.json({ email: user.email })
+            if (user === undefined) {
+                res.status(400).json({ error: "email and/or password is incorrect"})
+            } else if (password == "") {
+                res.status(400).json({ error: "email and/or password cannot be blank"})
+            } else {
+                const isValidPassword = bcrypt.compareSync(password, user.password_digest)
+
+                    if (user && isValidPassword) {
+                        req.session.userId = user.id
+                        res.json({email: user.email})
+                    }
             }
         })
 })
