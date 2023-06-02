@@ -17,7 +17,8 @@
     <script defer src="./js/components/edit_movie.js"></script>
     <script defer src="./js/components/edit_account.js"></script>
     <script defer src="./js/components/search_movie.js"></script>
-    <script defer src="./js/components/wishlist.js"></script>
+		<script defer src="./js/components/filter_movies.js"></script>
+		<script defer src="./js/components/wishlist.js"></script>
 </head>
 <body>
     <h1>Movie WishList</h1>
@@ -41,6 +42,9 @@
                 <form action="" onSubmit="searchMovie(event)">
                     <input class="apiInput" placeholder="Search for a movie...">
                 </form>
+            </li>
+            <li class="user-info"  id="material-symbols-outlined login">
+                <input class="filterInput" onInput="filterMovies(event)" placeholder="Filter for movies in the database...">
             </li>
             <li class="user-info"  id="material-symbols-outlined login" onClick="renderEditAccount()">Edit Account</li>
         </ul>
