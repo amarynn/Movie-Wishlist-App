@@ -8,12 +8,37 @@ function renderMovieList() {
     apiTitle.value = ""
 }
 
+function renderEditMovie(){
+        document.querySelector('#page').innerHTML = `
+            <section class="create-movie">
+                <form action="" onSubmit="createMovie(event)">
+                    <h2>Edit Movie</h2>
+                    <fieldset>
+                        <label for="">Title:</label>
+                        <input type="text" name="title">
+                    </fieldset>
+                    <fieldset>
+                        <label for="">Description:</label>
+                        <textarea name="description" id="" cols="30" rows="10"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <label for="">Poster Link:</label>
+                        <input type="text" name="imageLink">
+                    </fieldset>
+                    <button>Edit Movie</button>
+                </form>
+            </section>
+        `
+}
+
 function renderMovies() {
     return state.moviesList.map(movie => `
         <section class="movie" data-id="${movie.id}">
             <header>
                 <h2>${movie.title}</h2>
                 <span class="material-symbols-outlined  delete" onClick="deleteMovie(event)">Delete</span>
+                <span class="material-symbols-outlined  edit" onClick="editMovie(event)">Edit</span>
+
             </header>
             <p>${movie.description}</p>
             <img src="${movie.img_link}">
@@ -34,4 +59,13 @@ function deleteMovie(event) {
             renderMovieList()
         })
 }
+
+function editMovie(event) {
+    const editButton = event.target
+    const movieDOM = editButton.closest('.movie')
+    const movieId = movieDOM.dataset.id
+    renderEditMovie()
+
+}
+
 
