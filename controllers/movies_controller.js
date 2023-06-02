@@ -28,6 +28,4 @@ router.delete('/:id', (req, res) => {
         .then(movies => res.json(movies))
 })
 
-// ability to edit movies needs more discussion
-
 module.exports = router
