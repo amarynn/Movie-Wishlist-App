@@ -14,8 +14,7 @@
 }
 
 img{
-    width: 370px;
-    height: 400px;
+    width: 100%;
     justify-content: center;
     padding-left: 0;
     margin-left: 0;
