@@ -80,3 +80,67 @@
 #search{
     padding-bottom: 100px;
 }
+
+@media screen and (max-width: 600px){
+    .header-nav{
+        display: inline-block;
+        text-decoration: none;
+        list-style: none;
+        border: 2px solid 394867;
+        font-size: 15px;
+        margin-left: 0px;
+        background-color: #9BA4B5;
+        color:aliceblue;
+        padding-left: 10px;
+        gap: 50px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        height: 100px;
+        
+    }
+    
+    .header-nav , .header-nav ul{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .header-nav ul.navigation li{
+        width: 100%;
+        min-width: auto;
+    }
+
+    .logo{
+        font-size: 15px;
+        padding-left: 20px;
+        padding-top: 0px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: 2px solid orange;
+        border-radius: 70%;
+        border-width: 20px;
+        width: 50px;
+        box-shadow: 6px 6px 6px #394867;
+      
+        padding-bottom:10;
+        margin-right: 50px;
+        /* margin-right: 200px;
+        margin-left:  100px; */
+        box-shadow: 6px 6px 6px #394867;
+        height: 80px;
+        text-align: center;
+        font-style: bold;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    }
+
+
+.user-info{
+    padding-top: 25px;
+    gap:  0px;
+    text-size-adjust: 10px;
+    padding-right: 40px;
+    gap: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 0;
+}
+}
