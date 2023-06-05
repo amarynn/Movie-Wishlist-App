@@ -81,15 +81,13 @@
     padding-bottom: 100px;
 }
 
-@media(mix-width: 600px){
+@media screen and (max-width: 600px){
     .header-nav{
-        display: flex;
-        justify-content:left;
+        display: inline-block;
         text-decoration: none;
         list-style: none;
         border: 2px solid 394867;
         font-size: 15px;
-        justify-content: center;
         margin-left: 0px;
         background-color: #9BA4B5;
         color:aliceblue;
@@ -99,6 +97,17 @@
         padding-bottom: 0px;
         height: 100px;
         
+    }
+    
+    .header-nav , .header-nav ul{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .header-nav ul.navigation li{
+        width: 100%;
+        min-width: auto;
     }
 
     .logo{
