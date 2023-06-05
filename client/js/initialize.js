@@ -11,8 +11,6 @@ function fetchMovies() {
         })
 }
 
-fetchMovies();
-
 fetch('/api/sessions')
     .then(res => res.json())
     .then(data => {
@@ -20,3 +18,5 @@ fetch('/api/sessions')
             state.loggedInUser = data.email
         }
     })
+
+fetchMovies();
