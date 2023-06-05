@@ -144,3 +144,58 @@
     padding-bottom: 0;
 }
 }
+
+
+.apiInput{
+    height: 20px;
+}
+
+.filterInput{
+    height:20px;
+    width: 120px;
+}
+
+
+.sign-up{
+    background-color: #F9E0BB;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 10px;
+    height: 300px;
+}
+
+
+
+.log-in{
+    background-color: #FFC26F;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 10px;
+    height: 250px;
+}
+
+.loginInput, .addmovieInput, .signupInput, .editaccountInput{
+    border-radius: 10%;
+    width: 250px;
+}
+
+.create-movie {
+    background-color: #d89d76;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 10px;
+    height: 450px;
+    width:550px
+}
+
+.edit-account{
+    background-color: #D7C0AE;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 10px;
+    height: 300px;
+}

@@ -5,12 +5,12 @@ function renderLogin() {
                 <h2>Login:</h2>
                 <fieldset>
                     <label for="">Email:</label>
-                    <input type="text"name="email">
+                    <input type="text"name="email" class="loginInput">
                 </fieldset>
 
                 <fieldset>
                     <label for="">Password:</label>
-                    <input type="password"name="password">
+                    <input type="password"name="password" class="loginInput" >
                 </fieldset>
                 <button>Log in</button>
             </form>

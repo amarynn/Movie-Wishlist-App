@@ -5,17 +5,17 @@ function renderSignUp() {
                 <h2> Sign Up: </h2>
                 <fieldset>
                     <label for="">Name: </label>
-                    <input type="text" name="name">
+                    <input type="text" name="name" class="signupInput">
                 </fieldset>
 
                 <fieldset>
                     <label for="">Email: </label>
-                    <input type="text" name="email">
+                    <input type="text" name="email" class="signupInput">
                 </fieldset>
 
                 <fieldset>
                     <label for="">Password: </label>
-                    <input type="password" name="password">
+                    <input type="password" name="password" class="signupInput">
                 </fieldset>
 
                 <button>Sign Up </button>

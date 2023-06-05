@@ -15,7 +15,7 @@ function renderEditAccount() {
 
                 <fieldset>
                     <label for="">Password: </label>
-                    <input type="password" name="password">
+                    <input type="password" name="password" class="editaccountInput">
                 </fieldset>
 
                 <button>Edit Account</button>

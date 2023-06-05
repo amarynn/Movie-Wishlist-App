@@ -5,15 +5,15 @@ function renderAddMovie() {
                 <h2>Add Movie</h2>
                 <fieldset>
                     <label for="">Title:</label>
-                    <input type="text" name="title">
+                    <input type="text" name="title" class="addmovieInput">
                 </fieldset>
                 <fieldset>
                     <label for="">Description:</label>
-                    <textarea name="description" id="" cols="30" rows="10"></textarea>
+                    <textarea name="description" id="" cols="30" rows="10"></textarea class="addmovieInput">
                 </fieldset>
                 <fieldset>
                     <label for="">Poster Link:</label>
-                    <input type="text" name="imageLink">
+                    <input type="text" name="imageLink" class="addmovieInput">
                 </fieldset>
                 <button>Add Movie</button>
             </form>
