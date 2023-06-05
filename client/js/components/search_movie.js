@@ -1,8 +1,9 @@
 function searchMovie(event) {
     event.preventDefault()
-    const apiTitle = document.querySelector('.apiInput').value    
-    
-    fetch(`https://www.omdbapi.com/?apikey=28d95ef8&t=${apiTitle}`)
+    const apiTitle = document.querySelector('.apiInput').value
+
+    if (apiTitle) {
+        fetch(`https://www.omdbapi.com/?apikey=28d95ef8&t=${apiTitle}`)
         .then(res => res.json())
         .then(movie => {
             const title = movie.Title
@@ -21,4 +22,5 @@ function searchMovie(event) {
                     renderMovieList()
                 })
         })
+    }
 }
