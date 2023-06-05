@@ -21,7 +21,7 @@ function renderSignUp() {
 
                 <button class="btn">Sign Up </button>
             </form>
-            <div class="container">
+            <div class="box">
                 <div class="bubbles">
                     <span style="--i.11;"></span>
                     <span style="--i.14;"></span>

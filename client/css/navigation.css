@@ -1,6 +1,6 @@
-.header-nav{
+.header-nav {
     display: flex;
-    justify-content:left;
+    justify-content: left;
     text-decoration: none;
     list-style: none;
     border: 2px solid 394867;
@@ -8,32 +8,33 @@
     justify-content: center;
     margin-left: 0px;
     background-color: #9BA4B5;
-    color:aliceblue;
+    color: aliceblue;
     padding-left: 10px;
     gap: 50px;
     padding-right: 0px;
     padding-bottom: 0px;
     height: 100px;
-    
+
 }
-.user-info:hover{
+
+.user-info:hover {
     cursor: pointer;
 }
 
-.header-nav ul{
+.header-nav ul {
     display: inline-flex;
     list-style: none;
 }
 
-.header-nav ul.navigation li{
+.header-nav ul.navigation li {
     min-width: 100px;
 }
 
 
 
-.user-info{
+.user-info {
     padding-top: 25px;
-    gap:  0px;
+    gap: 0px;
     text-size-adjust: 10px;
     padding-right: 40px;
     gap: 10px;
@@ -42,18 +43,18 @@
 }
 
 
-.logo{
+.logo {
     font-size: 15px;
     padding-left: 20px;
     padding-top: 0px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: 2px solid orange;
     border-radius: 70%;
     border-width: 20px;
     width: 50px;
     box-shadow: 6px 6px 6px #394867;
-  
-    padding-bottom:10;
+
+    padding-bottom: 10;
     margin-right: 50px;
     /* margin-right: 200px;
     margin-left:  100px; */
@@ -61,7 +62,7 @@
     height: 80px;
     text-align: center;
     font-style: bold;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
@@ -69,38 +70,38 @@
     color: rgb(211, 96, 92);
 }
 
-#material-symbols-outlined.sign-up{
+#material-symbols-outlined.sign-up {
     box-shadow: 6px 6px 6px #394867;
 }
 
-#material-symbols-outlined.login{
+#material-symbols-outlined.login {
     box-shadow: 6px 6px 6px #394867;
 }
 
-.material-symbols-outlined.star{
+.material-symbols-outlined.star {
     color: rgb(250, 176, 4);
 }
 
-.material-symbols-outlined.star:hover{
+.material-symbols-outlined.star:hover {
     cursor: pointer;
-    
+
 }
 
-.material-symbols-outlined.edit:hover{
-    cursor: pointer;
-}
-
-.material-symbols-outlined.delete:hover{
+.material-symbols-outlined.edit:hover {
     cursor: pointer;
 }
 
+.material-symbols-outlined.delete:hover {
+    cursor: pointer;
+}
 
-#search{
+
+#search {
     padding-bottom: 100px;
 }
 
-@media screen and (max-width: 600px){
-    .header-nav{
+@media screen and (max-width: 600px) {
+    .header-nav {
         display: inline-block;
         text-decoration: none;
         list-style: none;
@@ -108,38 +109,39 @@
         font-size: 15px;
         margin-left: 0px;
         background-color: #9BA4B5;
-        color:aliceblue;
+        color: aliceblue;
         padding-left: 10px;
         gap: 50px;
         padding-right: 0px;
         padding-bottom: 0px;
         height: 100px;
-        
+
     }
-    
-    .header-nav , .header-nav ul{
+
+    .header-nav,
+    .header-nav ul {
         display: block;
         width: 100%;
         height: auto;
     }
 
-    .header-nav ul.navigation li{
+    .header-nav ul.navigation li {
         width: 100%;
         min-width: auto;
     }
 
-    .logo{
+    .logo {
         font-size: 15px;
         padding-left: 20px;
         padding-top: 0px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         border: 2px solid orange;
         border-radius: 70%;
         border-width: 20px;
         width: 50px;
         box-shadow: 6px 6px 6px #394867;
-      
-        padding-bottom:10;
+
+        padding-bottom: 10;
         margin-right: 50px;
         /* margin-right: 200px;
         margin-left:  100px; */
@@ -147,98 +149,130 @@
         height: 80px;
         text-align: center;
         font-style: bold;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
     }
 
 
-.user-info{
-    padding-top: 25px;
-    gap:  0px;
-    text-size-adjust: 10px;
-    padding-right: 40px;
-    gap: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-bottom: 0;
-}
+    .user-info {
+        padding-top: 25px;
+        gap: 0px;
+        text-size-adjust: 10px;
+        padding-right: 40px;
+        gap: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-bottom: 0;
+    }
 }
 
 
-.apiInput{
+.apiInput {
     height: 20px;
 }
 
-.filterInput{
-    height:20px;
+.filterInput {
+    height: 20px;
     width: 120px;
 }
 
 
-.sign-up{
+.sign-up {
     background-color: black;
     text-align: center;
-   
+
     padding-top: 10px;
     height: 300px;
 }
 
 
 
-.log-in{
+.log-in {
     background-color: black;
     text-align: center;
-    
+
     padding-top: 10px;
     height: 250px;
 }
 
-.loginInput, .addmovieInput, .signupInput, .editaccountInput, .editmovieInput{
- 
-    outline:none;
+.loginInput,
+.addmovieInput,
+.signupInput,
+.editaccountInput,
+.editmovieInput {
+
+    outline: none;
     border-bottom: 1px solid #ccc;
     width: 250px;
-    
+
 }
 
 .create-movie {
     background-color: black;
     text-align: center;
-    
+
     padding-top: 10px;
-    width:100%px
+    width: 100%px
 }
 
-.edit-account{
+.edit-account {
     background-color: black;
     text-align: center;
-    
+
     padding-top: 10px;
     height: 300px;
 }
 
-.navForm{
+.navForm {
     margin-right: 300px;
     margin-left: 300px;
-    
+
 }
 
-.text{
+.text {
     color: rgb(240, 160, 63);
     font-size: 25px;
-    
+
 }
 
-.btn:hover{
+.btn:hover {
     transform: scale(1.5);
 }
 
-.btn{
+.btn {
     font-size: 10px;
 }
 
-.headerNav{
+.headerNav {
     padding: 10px;
     color: black;
     display: flex;
-    gap:  100px;
+    gap: 100px;
+}
+
+.side-navigation {
+    width: 30px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.side-navigation ul.ham {
+    position: absolute;
+    background: white;
+    width: 130px;
+    color: black;
+    display: block;
+    list-style-type: none;
+    z-index: 1000;
+    right: 0px;
+}
+
+.side-navigation ul.ham.hidden{ 
+    opacity: 0;
+}
+
+.side-navigation .ham li {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    cursor: pointer;
 }
