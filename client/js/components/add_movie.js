@@ -1,4 +1,5 @@
 function renderAddMovie() {
+    document.querySelector('#slide').innerHTML=``
     document.querySelector('#page').innerHTML = `
         
         <section class="create-movie">

@@ -1,5 +1,7 @@
 function renderLogin() {
-    document.querySelector('#page').innerHTML = `
+    document.querySelector('#slide').innerHTML=``
+    document.querySelector('#page').innerHTML =
+     `
         <section class='log-in'>
             <form action="" onSubmit="logIn(event)" class="navForm">
                 <h2>Login:</h2>

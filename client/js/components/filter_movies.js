@@ -27,10 +27,12 @@ function renderFilteredMovies() {
         <section class="movie" data-id="${movie.id}">
             <header>
                 <h2>${movie.title}</h2>
-                <span class="material-symbols-outlined  plus" onClick="addWishlist(event)">Wishlist</span>
-                <span class="material-symbols-outlined  delete" onClick="deleteMovie(event)">Delete</span>
+                <div class="headerNav">
+                <span class="material-symbols-outlined  star" onClick="addWishlist(event)">Star</span>
                 <span class="material-symbols-outlined  edit" onClick="editMovie(event)">Edit</span>
-
+                <span class="material-symbols-outlined  delete" onClick="deleteMovie(event)">Delete</span>
+                </div>
+                
             </header>
             <p>${movie.description}</p>
             <img src="${movie.img_link}">

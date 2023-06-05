@@ -1,5 +1,6 @@
 
 function renderEditMovie(movie){
+    document.querySelector('#slide').innerHTML=``
     document.querySelector('#page').innerHTML = `
         <section class="create-movie">
             <form action="" onSubmit="editMovieDb(event)"class="navForm">

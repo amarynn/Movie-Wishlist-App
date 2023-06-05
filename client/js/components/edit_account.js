@@ -1,4 +1,5 @@
 function renderEditAccount() {
+    document.querySelector('#slide').innerHTML=``
     document.querySelector('#page').innerHTML = `
         <section class = 'edit-account'>
             <form action = "" onSubmit="editAccount(event)" class="navForm">
