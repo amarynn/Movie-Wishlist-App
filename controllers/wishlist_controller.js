@@ -19,4 +19,13 @@ router.get("/", (req, res) => {
         .then(movies => res.json(movies))
 })
 
+router.delete('/:id', (req, res) => {
+    const movieId = req.params.id
+    let currentUserId = req.session.userId
+
+    Wishlist
+        .removeItem(movieId, currentUserId)
+        .then(movies => res.json(movies))
+})
+
 module.exports = router 
