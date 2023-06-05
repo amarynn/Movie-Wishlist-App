@@ -19,7 +19,7 @@ function renderEditAccount() {
 
                 <button class="btn">Edit Account</button>
             </form>
-            <div class="container">
+            <div class="box">
                 <div class="bubbles">
                     <span style="--i.11;"></span>
                     <span style="--i.14;"></span>
