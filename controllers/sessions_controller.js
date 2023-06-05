@@ -19,7 +19,7 @@ router.post('/', (req, res) => {
 
                     if (user && isValidPassword) {
                         req.session.userId = user.id
-                        res.json({email: user.email})
+                        res.json({email: user.email, name: user.name})
                     }
             }
         })
@@ -35,5 +35,14 @@ router.get('/', (req, res) => {
         res.json({})
     }
 })
-  
+
+router.delete("/", (req, res) => {
+
+    req.session.destroy(error => {
+        res.clearCookie("user_sid")
+        console.log("test error")
+        res.json({ success: true})
+    })
+})
+
 module.exports = router 

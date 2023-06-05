@@ -1,5 +1,5 @@
 function renderNav() {
-    if (state.loggedInUser) {
+    if (state.loggedInUser !== null) {
         document.querySelector('#navigation').innerHTML = `
             <li class="logo">BLISS movies</li>
             <li class="user-info" id="material-symbols-outlined home" onClick="renderMovieList()">Home</li>

@@ -1,5 +1,7 @@
 function renderUserWishlist() {
     
+    state.wishlistMovies = []
+
     fetch('/api/wishlist', {
         method: 'GET'
     })
@@ -14,7 +16,6 @@ function renderUserWishlist() {
 }
 
 function renderWishlist () {
-    console.log(state)
     document.querySelector('#page').innerHTML = `
         <section class="movie-list">
             ${renderMoviesWishlist()}

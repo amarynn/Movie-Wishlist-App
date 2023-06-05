@@ -63,6 +63,7 @@ function logIn(event) {
             renderError(res.error)
         } else {
             state.loggedInUser = res.email
+            state.loggedInUserName = res.name
             renderMovieList()
         }
     })

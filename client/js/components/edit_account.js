@@ -4,6 +4,13 @@ function renderEditAccount() {
             <form action = "" onSubmit="editAccount(event)" class="navForm">
                 <h2> Edit Details: </h2>
                 <fieldset>
+                    <label for="">Name: </label>
+                    <input type="text" name="name" value="${state.loggedInUserName}" >
+                </fieldset>
+
+                <fieldset>
+                    <label for="">Email: </label>
+                    <input type="text" name="email" value="${state.loggedInUser}">
                     <label for="" class="text">Name: </label><br>
                     <input type="text" name="name" value="" class="editaccountInput">
                 </fieldset>

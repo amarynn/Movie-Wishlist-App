@@ -1,7 +1,10 @@
 let state = {
     moviesList: [],
-    wishlistMovies: []
+    wishlistMovies: [],
+    loggedInUser: null,
+    loggedInUserName: null
 }
+
 function fetchMovies() {
     state.moviesList = [];
     fetch('/api/movies')
