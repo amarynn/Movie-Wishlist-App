@@ -21,8 +21,12 @@ function renderMovies() {
                 <span class="material-symbols-outlined  edit" onClick="editMovie(event)">Edit</span>
 
             </header>
-            <p>${movie.description}</p>
-            <img src="${movie.img_link}">
+            <section class="container">
+                <img src="${movie.img_link}">
+                <section class="overlay">
+                    <section class="hover_text">${movie.description}</section>
+                </section>
+            </section>
         </section>
     `).join('')
 }

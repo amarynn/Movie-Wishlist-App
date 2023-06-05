@@ -9,13 +9,42 @@
 .movie{
     
     padding: 0 1rem;
+    padding-bottom: 16px;
     box-shadow: 6px 6px 6px #394867;
     background-color: #F1F6F9;
 }
 
 img{
     width: 100%;
+    max-height: 470px;
     justify-content: center;
     padding-left: 0;
     margin-left: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.container:hover .overlay {
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    height: 49%;
+    width: 17%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(0, 0, 0);
+}
+
+.hover_text {
+    color: white;
+    top: 35%;
+    position: absolute;
+    text-align: center;
 }

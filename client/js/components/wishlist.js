@@ -29,8 +29,12 @@ function renderMoviesWishlist() {
                 <h2>${movie.title}</h2>
                 <span class="material-symbols-outlined  delete" onClick="deleteWishlistItem(event)">Remove</span>
             </header>
-            <p>${movie.description}</p>
-            <img src="${movie.img_link}">
+            <section class="container">
+                <img src="${movie.img_link}">
+                <section class="overlay">
+                    <section class="hover_text">${movie.description}</section>
+                </section>
+            </section>
         </section>
     `).join('')
 }
