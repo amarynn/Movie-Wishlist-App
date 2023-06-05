@@ -1,22 +1,51 @@
 function renderAddMovie() {
     document.querySelector('#page').innerHTML = `
+        
         <section class="create-movie">
-            <form action="" onSubmit="createMovie(event)">
+       
+            <form action="" onSubmit="createMovie(event)" class="navForm">
                 <h2>Add Movie</h2>
                 <fieldset>
-                    <label for="">Title:</label>
+                    <label for="" class="text">Title:</label><br>
                     <input type="text" name="title" class="addmovieInput">
                 </fieldset>
                 <fieldset>
-                    <label for="">Description:</label>
-                    <textarea name="description" id="" cols="30" rows="10"></textarea class="addmovieInput">
+                    <label for="" class="text">Description:</label><br>
+                    <textarea name="description" id="" cols="15" rows="8"></textarea class="addmovieInput">
                 </fieldset>
                 <fieldset>
-                    <label for="">Poster Link:</label>
+                    <label for="" class="text">Poster Link:</label><br>
                     <input type="text" name="imageLink" class="addmovieInput">
                 </fieldset>
-                <button>Add Movie</button>
+                <button class="btn">Add Movie</button>
             </form>
+            <div class="container">
+                <div class="bubbles">
+                    <span style="--i.11;"></span>
+                    <span style="--i.14;"></span>
+                    <span style="--i.25;"></span>
+                    <span style="--i.16;"></span>
+                    <span style="--i.14;"></span>
+                    <span style="--i.25;"></span>
+                    <span style="--i.12;"></span>
+                    <span style="--i.24;"></span>
+                    <span style="--i.13;"></span>
+                    <span style="--i.11;"></span>
+                    <span style="--i.10;"></span>
+                    <span style="--i.15;"></span>
+                    <span style="--i.17;"></span>
+                    <span style="--i.18;"></span>
+                    <span style="--i.12;"></span>
+                    <span style="--i.24;"></span>
+                    <span style="--i.13;"></span>
+                    <span style="--i.11;"></span>
+                    <span style="--i.10;"></span>
+                    <span style="--i.15;"></span>
+                    <span style="--i.17;"></span>
+                    <span style="--i.18;"></span>
+                    <span style="--i.12;"></span>
+                </div>
+            </div>
         </section>
     `
 }

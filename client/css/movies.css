@@ -12,11 +12,12 @@
     padding-bottom: 16px;
     box-shadow: 6px 6px 6px #394867;
     background-color: #F1F6F9;
+    height: 550px;
 }
 
 img{
     width: 100%;
-    max-height: 470px;
+    max-height: 400px;
     justify-content: center;
     padding-left: 0;
     margin-left: 0;
@@ -35,16 +36,31 @@ img{
 
 .overlay {
     position: absolute;
-    height: 49%;
-    width: 17%;
+    height: 50%;
+    width: 90%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgb(0, 0, 0);
+    margin-top: 50px;
+    padding-top: 0px;
 }
 
 .hover_text {
     color: white;
     top: 35%;
     position: absolute;
+    text-align: center;
+    width: 150px;
+    height:   150px;
+    margin-left: 90px;
+    margin-bottom: 80px;
+    font-size: 15px;
+}
+
+header {
+    gap: 20px;
+}
+
+.movieTitle{
     text-align: center;
 }

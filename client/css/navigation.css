@@ -65,8 +65,8 @@
 
 }
 
-.material-symbols-outlined.delete{
-    color: rgb(211, 96, 92)
+.material-symbols-outlined.delete {
+    color: rgb(211, 96, 92);
 }
 
 #material-symbols-outlined.sign-up{
@@ -76,6 +76,24 @@
 #material-symbols-outlined.login{
     box-shadow: 6px 6px 6px #394867;
 }
+
+.material-symbols-outlined.star{
+    color: rgb(250, 176, 4);
+}
+
+.material-symbols-outlined.star:hover{
+    cursor: pointer;
+    
+}
+
+.material-symbols-outlined.edit:hover{
+    cursor: pointer;
+}
+
+.material-symbols-outlined.delete:hover{
+    cursor: pointer;
+}
+
 
 #search{
     padding-bottom: 100px;
@@ -157,10 +175,9 @@
 
 
 .sign-up{
-    background-color: #F9E0BB;
+    background-color: black;
     text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
+   
     padding-top: 10px;
     height: 300px;
 }
@@ -168,34 +185,60 @@
 
 
 .log-in{
-    background-color: #FFC26F;
+    background-color: black;
     text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
+    
     padding-top: 10px;
     height: 250px;
 }
 
-.loginInput, .addmovieInput, .signupInput, .editaccountInput{
-    border-radius: 10%;
+.loginInput, .addmovieInput, .signupInput, .editaccountInput, .editmovieInput{
+ 
+    outline:none;
+    border-bottom: 1px solid #ccc;
     width: 250px;
+    
 }
 
 .create-movie {
-    background-color: #d89d76;
+    background-color: black;
     text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
+    
     padding-top: 10px;
-    height: 450px;
-    width:550px
+    width:100%px
 }
 
 .edit-account{
-    background-color: #D7C0AE;
+    background-color: black;
     text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
+    
     padding-top: 10px;
     height: 300px;
+}
+
+.navForm{
+    margin-right: 300px;
+    margin-left: 300px;
+    
+}
+
+.text{
+    color: rgb(240, 160, 63);
+    font-size: 25px;
+    
+}
+
+.btn:hover{
+    transform: scale(1.5);
+}
+
+.btn{
+    font-size: 10px;
+}
+
+.headerNav{
+    padding: 10px;
+    color: black;
+    display: flex;
+    gap:  100px;
 }
