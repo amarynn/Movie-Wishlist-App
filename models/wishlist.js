@@ -16,6 +16,12 @@ const Wishlist = {
         return db
             .query(sql, [currentUserId])
             .then(dbRes => dbRes.rows)
+    },
+
+    removeItem: (movieId, userId) => {
+        const sql = `DELETE FROM wishlisted WHERE movie_id = $1 AND user_id = $2`
+
+        return db.query(sql, [movieId, userId])
     }
 }
 
