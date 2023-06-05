@@ -1,5 +1,5 @@
 function renderSignUp() {
-    document.querySelector('#slide').innerHTML=``
+    document.querySelector('#slide').innerHTML= ``
     document.querySelector('#page').innerHTML = `
         <section class = 'sign-up'>
             <form action = "" onSubmit="signUp(event)" class="navForm">
