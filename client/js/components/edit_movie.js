@@ -2,23 +2,42 @@
 function renderEditMovie(movie){
     document.querySelector('#page').innerHTML = `
         <section class="create-movie">
-            <form action="" onSubmit="editMovieDb(event)">
+            <form action="" onSubmit="editMovieDb(event)"class="navForm">
             <input type="hidden" name="id" value="${movie.id}" />
                 <h2>Edit ${movie.title}</h2>
                 <fieldset>
-                    <label for="">Title:</label>
+                    <label for="" class="text">Title:</label>
                     <input type="text" name="title" value="${movie.title}">
                 </fieldset>
                 <fieldset>
-                    <label for="">Description:</label>
+                    <label for="" class="text">Description:</label>
                     <textarea name="description" id="" cols="30" rows="10">${movie.description}</textarea>
                 </fieldset>
                 <fieldset>
-                    <label for="">Poster Link:</label>
+                    <label for="" class="text">Poster Link:</label>
                     <input type="text" name="imageLink" value="${movie.img_link}">
                 </fieldset>
                 <button>Edit Movie</button>
             </form>
+            <div class="container">
+                <div class="bubbles">
+                    <span style="--i.11;"></span>
+                    <span style="--i.14;"></span>
+                    <span style="--i.25;"></span>
+                    <span style="--i.16;"></span>
+                    <span style="--i.14;"></span>
+                    <span style="--i.25;"></span>
+                    <span style="--i.12;"></span>
+                    <span style="--i.24;"></span>
+                    <span style="--i.13;"></span>
+                    <span style="--i.11;"></span>
+                    <span style="--i.10;"></span>
+                    <span style="--i.15;"></span>
+                    <span style="--i.17;"></span>
+                    <span style="--i.18;"></span>
+                    <span style="--i.12;"></span>
+                </div>
+            </div>
         </section>
     `
 }

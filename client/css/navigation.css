@@ -157,10 +157,9 @@
 
 
 .sign-up{
-    background-color: #F9E0BB;
+    background-color: black;
     text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
+   
     padding-top: 10px;
     height: 300px;
 }
@@ -168,10 +167,9 @@
 
 
 .log-in{
-    background-color: #FFC26F;
+    background-color: black;
     text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
+    
     padding-top: 10px;
     height: 250px;
 }
@@ -182,20 +180,28 @@
 }
 
 .create-movie {
-    background-color: #d89d76;
+    background-color: black;
     text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
+    
     padding-top: 10px;
-    height: 450px;
-    width:550px
+    width:100%px
 }
 
 .edit-account{
-    background-color: #D7C0AE;
+    background-color: black;
     text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
+    
     padding-top: 10px;
     height: 300px;
+}
+
+.navForm{
+    margin-right: 300px;
+    margin-left: 300px;
+    
+}
+
+.text{
+    color: rgb(240, 160, 63);
+    font-size: 25px;
 }
