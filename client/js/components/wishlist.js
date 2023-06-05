@@ -24,11 +24,12 @@ function renderWishlist () {
 }
 
 function renderMoviesWishlist() {
+    document.querySelector('#slide').innerHTML=``
     return state.wishlistMovies.map(movie => `
         <section class="movie" data-id="${movie.id}">
             <header>
                 <h2>${movie.title}</h2>
-                <span class="material-symbols-outlined  delete" onClick="deleteWishlistItem(event)">Remove</span>
+                <span class="material-symbols-outlined  delete" onClick="deleteWishlistItem(event)">Delete</span>
             </header>
             <section class="container">
                 <img src="${movie.img_link}">
