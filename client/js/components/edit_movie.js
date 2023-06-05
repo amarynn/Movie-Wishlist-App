@@ -6,18 +6,18 @@ function renderEditMovie(movie){
             <input type="hidden" name="id" value="${movie.id}" />
                 <h2>Edit ${movie.title}</h2>
                 <fieldset>
-                    <label for="" class="text">Title:</label>
-                    <input type="text" name="title" value="${movie.title}">
+                    <label for="" class="text">Title:</label><br>
+                    <input type="text" name="title" value="${movie.title}" class="editmovieInput">
                 </fieldset>
                 <fieldset>
-                    <label for="" class="text">Description:</label>
-                    <textarea name="description" id="" cols="30" rows="10">${movie.description}</textarea>
+                    <label for="" class="text">Description:</label><br>
+                    <textarea name="description" id="" cols="30" rows="10" class="editmovieInput">${movie.description}</textarea>
                 </fieldset>
                 <fieldset>
-                    <label for="" class="text">Poster Link:</label>
-                    <input type="text" name="imageLink" value="${movie.img_link}">
+                    <label for="" class="text">Poster Link:</label><br>
+                    <input type="text" name="imageLink" value="${movie.img_link}" class="editmovieInput">
                 </fieldset>
-                <button>Edit Movie</button>
+                <button class="btn">Edit Movie</button>
             </form>
             <div class="container">
                 <div class="bubbles">
@@ -27,6 +27,14 @@ function renderEditMovie(movie){
                     <span style="--i.16;"></span>
                     <span style="--i.14;"></span>
                     <span style="--i.25;"></span>
+                    <span style="--i.12;"></span>
+                    <span style="--i.24;"></span>
+                    <span style="--i.13;"></span>
+                    <span style="--i.11;"></span>
+                    <span style="--i.10;"></span>
+                    <span style="--i.15;"></span>
+                    <span style="--i.17;"></span>
+                    <span style="--i.18;"></span>
                     <span style="--i.12;"></span>
                     <span style="--i.24;"></span>
                     <span style="--i.13;"></span>

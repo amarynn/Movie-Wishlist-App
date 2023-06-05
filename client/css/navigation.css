@@ -174,9 +174,12 @@
     height: 250px;
 }
 
-.loginInput, .addmovieInput, .signupInput, .editaccountInput{
-    border-radius: 10%;
+.loginInput, .addmovieInput, .signupInput, .editaccountInput, .editmovieInput{
+ 
+    outline:none;
+    border-bottom: 1px solid #ccc;
     width: 250px;
+    
 }
 
 .create-movie {
@@ -204,4 +207,13 @@
 .text{
     color: rgb(240, 160, 63);
     font-size: 25px;
+    
+}
+
+.btn:hover{
+    transform: scale(1.5);
+}
+
+.btn{
+    font-size: 10px;
 }

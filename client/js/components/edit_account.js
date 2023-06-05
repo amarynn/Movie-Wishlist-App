@@ -4,21 +4,21 @@ function renderEditAccount() {
             <form action = "" onSubmit="editAccount(event)" class="navForm">
                 <h2> Edit Details: </h2>
                 <fieldset>
-                    <label for="" class="text">Name: </label>
+                    <label for="" class="text">Name: </label><br>
                     <input type="text" name="name" value="" class="editaccountInput">
                 </fieldset>
 
                 <fieldset>
-                    <label for="" class="text">Email: </label>
+                    <label for="" class="text">Email: </label><br>
                     <input type="text" name="email" value="" class="editaccountInput">
                 </fieldset>
 
                 <fieldset>
-                    <label for="" class="text">Password: </label>
+                    <label for="" class="text">Password: </label><br>
                     <input type="password" name="password" class="editaccountInput">
                 </fieldset>
 
-                <button>Edit Account</button>
+                <button class="btn">Edit Account</button>
             </form>
             <div class="container">
                 <div class="bubbles">
@@ -28,6 +28,14 @@ function renderEditAccount() {
                     <span style="--i.16;"></span>
                     <span style="--i.14;"></span>
                     <span style="--i.25;"></span>
+                    <span style="--i.12;"></span>
+                    <span style="--i.24;"></span>
+                    <span style="--i.13;"></span>
+                    <span style="--i.11;"></span>
+                    <span style="--i.10;"></span>
+                    <span style="--i.15;"></span>
+                    <span style="--i.17;"></span>
+                    <span style="--i.18;"></span>
                     <span style="--i.12;"></span>
                     <span style="--i.24;"></span>
                     <span style="--i.13;"></span>

@@ -4,15 +4,15 @@ function renderLogin() {
             <form action="" onSubmit="logIn(event)" class="navForm">
                 <h2>Login:</h2>
                 <fieldset>
-                    <label for="" class="text">Email:</label>
+                    <label for="" class="text">Email:</label><br>
                     <input type="text"name="email" class="loginInput">
                 </fieldset>
 
                 <fieldset>
-                    <label for="" class="text">Password:</label>
+                    <label for="" class="text">Password:</label><br>
                     <input type="password"name="password" class="loginInput" >
                 </fieldset>
-                <button>Log in</button>
+                <button class="btn">Log in</button>
             </form>
             <div class="container">
                 <div class="bubbles">
@@ -22,6 +22,14 @@ function renderLogin() {
                     <span style="--i.16;"></span>
                     <span style="--i.14;"></span>
                     <span style="--i.25;"></span>
+                    <span style="--i.12;"></span>
+                    <span style="--i.24;"></span>
+                    <span style="--i.13;"></span>
+                    <span style="--i.11;"></span>
+                    <span style="--i.10;"></span>
+                    <span style="--i.15;"></span>
+                    <span style="--i.17;"></span>
+                    <span style="--i.18;"></span>
                     <span style="--i.12;"></span>
                     <span style="--i.24;"></span>
                     <span style="--i.13;"></span>

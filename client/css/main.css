@@ -48,7 +48,7 @@ h1 {
     position: relative;
     width: 30px;
     height: 30px;
-    background: #4fc3dc;
+    background: #f9f9f9;
     margin: 0 4px;
     border-radius: 50%;
     box-shadow: 0 0 0 10px #4fc3dc44,
@@ -59,7 +59,7 @@ h1 {
     
 }
 .bubbles span:nth-child(even){
-    background: #ff2d75;
+    background: #e9a77d;
     box-shadow: 0 0 0 10px #ff2d7544, 
     0 0 50px #ff2d75, 
     0 0 100px #ff2d75;
