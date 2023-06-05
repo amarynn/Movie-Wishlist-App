@@ -1,5 +1,6 @@
 let state = {
-    moviesList: []
+    moviesList: [],
+    wishlistMovies: []
 }
 function fetchMovies() {
     state.moviesList = [];
