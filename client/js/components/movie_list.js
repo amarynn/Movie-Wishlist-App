@@ -1,5 +1,18 @@
 function renderMovieList() {
     const apiTitle = document.querySelector('.apiInput')
+    
+    document.querySelector('#slide').innerHTML = `
+        <div id="slider">
+            <figure>
+                <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW92aWVzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60">
+                <img src="https://images.unsplash.com/photo-1568876694728-451bbf694b83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fG1vdmllc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60">
+                <img src="https://images.unsplash.com/photo-1543536448-d209d2d13a1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1vdmllc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60">
+                <img src="https://images.unsplash.com/photo-1543840950-89196ec9923b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fG1vdmllc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60">
+                <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW92aWVzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60">
+            </figure>
+        </div>
+    `
+
     document.querySelector('#page').innerHTML = `
         <section class="movie-list">
             ${renderMovies()}
@@ -11,42 +24,43 @@ function renderMovieList() {
 
 function renderMovies() {
     renderNav()
-    document.querySelector('#slide').innerHTML = `
-    <div id="slider">
-    <figure>
-        <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW92aWVzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60">
-
-        <img src="https://images.unsplash.com/photo-1568876694728-451bbf694b83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fG1vdmllc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60">
-
-        <img src="https://images.unsplash.com/photo-1543536448-d209d2d13a1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1vdmllc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60">
-        
-        <img src="https://images.unsplash.com/photo-1543840950-89196ec9923b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fG1vdmllc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60">
-
-        <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW92aWVzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60">
-    </figure>
-</div>
-    `
-
-    return state.moviesList.map(movie => `
-        <section class="movie" data-id="${movie.id}">
-            <header>
-                <h2 class="movieTitle">${movie.title}</h2>
-                <div class="headerNav">
-                <span class="material-symbols-outlined star" onClick="addWishlist(event)">Star</span>
-                <span class="material-symbols-outlined edit" onClick="editMovie(event)">Edit</span>
-                <span class="material-symbols-outlined delete" onClick="deleteMovie(event)">Delete</span>
-                
-                </div>
-
-            </header>
-            <section class="container">
-                <img src="${movie.img_link}">
-                <section class="overlay">
-                    <section class="hover_text">${movie.description}</section>
+    const apiTitle = document.querySelector('.apiInput')
+    
+    if (apiTitle) {
+        return state.moviesList.map(movie => `
+            <section class="movie" data-id="${movie.id}">
+                <header>
+                    <h2 class="movieTitle">${movie.title}</h2>
+                    <div class="headerNav">
+                        <span class="material-symbols-outlined star" onClick="addWishlist(event)">Star</span>
+                        <span class="material-symbols-outlined edit" onClick="editMovie(event)">Edit</span>
+                        <span class="material-symbols-outlined delete" onClick="deleteMovie(event)">Delete</span>
+                    </div>
+                </header>
+                <section class="container">
+                    <img src="${movie.img_link}">
+                    <section class="overlay">
+                        <section class="hover_text">${movie.description}</section>
+                    </section>
                 </section>
             </section>
-        </section>
-    `).join('')
+        `).join('')
+    } else {
+        return state.moviesList.map(movie => `
+            <section class="movie" data-id="${movie.id}">
+                <header>
+                    <h2 class="movieTitle">${movie.title}</h2>
+                    <div class="headerNav"></div>
+                </header>
+                <section class="container">
+                    <img src="${movie.img_link}">
+                    <section class="overlay">
+                        <section class="hover_text">${movie.description}</section>
+                    </section>
+                </section>
+            </section>
+        `).join('')
+    }
 }
 
 function deleteMovie(event) {
