@@ -19,37 +19,13 @@
     <script defer src="./js/components/search_movie.js"></script>
 	<script defer src="./js/components/filter_movies.js"></script>
 	<script defer src="./js/components/wishlist.js"></script>
+	<script defer src="./js/components/navBar.js"></script>
 </head>
 <body>
     <h1>Movie WishList</h1>
 
     <nav class="header-nav">
-        <ul>
-            <li class="logo">BLISS movies</li>
-            </ul>
-            <ul class="navigation">
-            <li class="user-info"
-            id="material-symbols-outlined home"
-            onclick="renderMovieList()">
-            Home
-
-            </li>
-            <li class="user-info" id="material-symbols-outlined sign-up" onClick="renderSignUp()">Sign Up</li>
-            <li class="user-info"  id="material-symbols-outlined login" onClick="renderLogin()">Login</li>
-            <li class="user-info"  id="material-symbols-outlined login" onClick="renderAddMovie()">Add Movie</li>
-            <li class="user-info"  id="material-symbols-outlined login" onClick="renderUserWishlist()">My Wishlist</li>
-            <li class="user-info"  id="material-symbols-outlined login" onClick="renderEditAccount()">Edit Account</li>
-            <li class="user-info"  id="material-symbols-outlined login">
-                <form action="" onSubmit="searchMovie(event)">
-                    <input class="apiInput" placeholder="Search for a movie...">
-                </form>
-            </li>
-
-            <li class="user-info"  id="material-symbols-outlined login">
-                <input class="filterInput" onInput="filterMovies(event)" placeholder="Filter for movies in the database...">
-            </li>
-
-        </ul>
+        <ul id="navigation"></ul>
     </nav>
     <main id="page" class="content"></main>
 </body>

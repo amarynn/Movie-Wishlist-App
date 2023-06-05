@@ -5,12 +5,12 @@ function renderEditAccount() {
                 <h2> Edit Details: </h2>
                 <fieldset>
                     <label for="">Name: </label>
-                    <input type="text" name="name">
+                    <input type="text" name="name" value="">
                 </fieldset>
 
                 <fieldset>
                     <label for="">Email: </label>
-                    <input type="text" name="email">
+                    <input type="text" name="email" value="">
                 </fieldset>
 
                 <fieldset>

@@ -5,11 +5,13 @@ function renderMovieList() {
             ${renderMovies()}
         </section>
     `
-    apiTitle.value = ""
+    if (apiTitle) apiTitle.value = ""
 }
 
 
 function renderMovies() {
+    renderNav()
+
     return state.moviesList.map(movie => `
         <section class="movie" data-id="${movie.id}">
             <header>
