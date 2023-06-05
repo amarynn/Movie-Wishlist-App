@@ -1,16 +1,17 @@
 function renderEditAccount() {
+    // getUserData()
     document.querySelector('#page').innerHTML = `
         <section class = 'edit-account'>
             <form action = "" onSubmit="editAccount(event)">
                 <h2> Edit Details: </h2>
                 <fieldset>
                     <label for="">Name: </label>
-                    <input type="text" name="name" value="">
+                    <input type="text" name="name" value="${state.loggedInUserName}" >
                 </fieldset>
 
                 <fieldset>
                     <label for="">Email: </label>
-                    <input type="text" name="email" value="">
+                    <input type="text" name="email" value="${state.loggedInUser}">
                 </fieldset>
 
                 <fieldset>
@@ -38,3 +39,11 @@ function editAccount(event) {
     .then(email => state.loggedInUser = email)
     .then(() => renderMovieList())
 }
+
+// function getUserData() {
+//     return fetch('/api/users', {
+//         method: 'GET',
+//     })
+//     .then(res => res.json())
+
+// }

@@ -29,4 +29,22 @@ router.post("/update", (req, res) => {
     
 })
 
+router.get('/', (req, res) => {
+    const userId = req.session.userId
+    if (userId) {
+        User
+            .findById(userId)
+            .then(email => {
+                User
+                    .findByEmail(email)
+                    .then(user => {
+                        res.json({email: user.email, name: user.name})
+                    })
+            })
+            
+    } else {
+        res.json({})
+    }
+})
+
 module.exports = router
