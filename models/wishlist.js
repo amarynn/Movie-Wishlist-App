@@ -8,6 +8,14 @@ const Wishlist = {
         `
 
         return db.query(sql, [currentUserId, movieId])
+    },
+
+    findAllForUser: (currentUserId) => {
+        const sql = `SELECT * FROM wishlisted INNER JOIN movies ON wishlisted.movie_id = movies.id WHERE user_id = $1`
+
+        return db
+            .query(sql, [currentUserId])
+            .then(dbRes => dbRes.rows)
     }
 }
 

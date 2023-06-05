@@ -11,4 +11,12 @@ router.post('/:id', (req, res) => {
         .addNew(movieId, currentUserId)
 })
 
+router.get("/", (req, res) => {
+    let currentUserId = req.session.userId
+
+    Wishlist
+        .findAllForUser(currentUserId)
+        .then(movies => res.json(movies))
+})
+
 module.exports = router 
