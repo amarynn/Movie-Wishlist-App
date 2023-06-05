@@ -1,6 +1,5 @@
 function renderUserWishlist() {
-    state.wishlistMovies = []
-
+    
     fetch('/api/wishlist', {
         method: 'GET'
     })
@@ -10,11 +9,12 @@ function renderUserWishlist() {
                 state.wishlistMovies.push(movie)
             });
         })
-        .then(renderWishlist())
+        .then(() => renderWishlist())
 
 }
 
 function renderWishlist () {
+    console.log(state)
     document.querySelector('#page').innerHTML = `
         <section class="movie-list">
             ${renderMoviesWishlist()}
