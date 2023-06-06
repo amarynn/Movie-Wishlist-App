@@ -36,8 +36,8 @@
     padding-top: 25px;
     gap: 0px;
     text-size-adjust: 10px;
-    padding-right: 40px;
-    gap: 10px;
+    padding-right: 70px;
+    gap: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-bottom: 0;
 }
@@ -155,10 +155,10 @@
 
 
     .user-info {
-        padding-top: 25px;
+        padding-top: 35px;
         gap: 0px;
         text-size-adjust: 10px;
-        padding-right: 40px;
+        padding-right: 70px;
         gap: 10px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         padding-bottom: 0;
@@ -167,12 +167,14 @@
 
 
 .apiInput {
-    height: 20px;
+    height: 30px;
+    margin-bottom: 50px;
 }
 
 .filterInput {
-    height: 20px;
-    width: 120px;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 50px;
 }
 
 
@@ -205,6 +207,7 @@
     width: 250px;
 
 }
+
 
 .create-movie {
     background-color: black;
@@ -239,7 +242,7 @@
 }
 
 .btn {
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .headerNav {
@@ -250,20 +253,23 @@
 }
 
 .side-navigation {
-    width: 30px;
+    width: 50px;
     padding-top: 30px;
     position: relative;
+    margin-left: 50px;
+   
 }
 
 .side-navigation ul.ham {
     position: absolute;
     background: white;
-    width: 130px;
+    width: 120px;
     color: black;
     display: block;
     list-style-type: none;
     z-index: 1000;
     right: 0px;
+    
 }
 
 .side-navigation ul.ham.hidden{ 

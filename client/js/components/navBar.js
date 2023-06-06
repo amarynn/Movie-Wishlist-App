@@ -17,7 +17,7 @@ function renderNav() {
                 </form>
             </li>
             <li class="user-info"  id="material-symbols-outlined login">
-                <input class="filterInput" onInput="filterMovies(event)" placeholder="Filter for movies in the database...">
+                <input class="filterInput" onInput="filterMovies(event)" placeholder="Filter for movies...">
             </li>
             
             <div class="side-navigation">

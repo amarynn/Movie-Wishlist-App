@@ -32,7 +32,7 @@ function renderMovies() {
                 <header>
                     <h2 class="movieTitle">${movie.title}</h2>
                     <div class="headerNav">
-                        <span class="material-symbols-outlined star" onClick="addWishlist(event)">Star</span>
+                        <span class="material-symbols-outlined star" onClick="addWishlist(event)" >Star</span>
                         <span class="material-symbols-outlined edit" onClick="editMovie(event)">Edit</span>
                         <span class="material-symbols-outlined delete" onClick="deleteMovie(event)">Delete</span>
                     </div>

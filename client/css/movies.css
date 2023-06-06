@@ -13,6 +13,7 @@
     box-shadow: 6px 6px 6px #394867;
     background-color: #F1F6F9;
     height: 550px;
+    margin-top: 30px;
 }
 
 img{
@@ -63,6 +64,8 @@ header {
 
 .movieTitle{
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 #slider figure {
