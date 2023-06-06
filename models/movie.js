@@ -2,7 +2,7 @@ const db = require('../db/db.js')
 
 const Movies = {
     findAll: () => {
-        const sql = `SELECT * FROM movies order by id`
+        const sql = `SELECT * FROM movies order by id DESC`
 
         return db
             .query(sql)

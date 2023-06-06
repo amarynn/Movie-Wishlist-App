@@ -1,5 +1,6 @@
 function renderMovieList() {
     const apiTitle = document.querySelector('.apiInput')
+    state.moviesList.sort((a, b) => b.id - a.id)
     
     document.querySelector('#slide').innerHTML = `
         <div id="slider">
